@@ -16,7 +16,7 @@ function DisplayCard() {
               </Card>
             </Col>
           ))}
-        {searchedImages && searchedImages.hits?.length == 0 && (
+        {searchedImages && searchedImages.hits?.length === 0 && (
           <h2 style={{ textAlign: "center" }}>No results found.</h2>
         )}
       </Row>
