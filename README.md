@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Framework used
 
-React js
+React js and react-bootstrap
 
 ## API service used
 

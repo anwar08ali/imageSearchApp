@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import { ImageSearchContext } from "./Context/ImageContext";
+import { ImageSearchContext } from "../Context/ImageContext";
 function DisplayCard() {
   const { searchedImages } = useContext(ImageSearchContext);
 

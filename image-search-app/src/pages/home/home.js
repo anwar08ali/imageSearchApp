@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorBoundary from "../../components/ErrorBoundary/ErrorBoundary";
 
-import ImageSearch from "../../components/ImageSearch";
+import ImageSearch from "../../components/ImageSearch/ImageSearch";
 import styles from "./home.module.css";
 
 const Home = (props) => {

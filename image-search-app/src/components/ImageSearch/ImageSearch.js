@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useContext } from "react";
-import Scroll from "./Scroll";
+import Scroll from "../Scroll/Scroll";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import DisplayCard from "./DisplayCard";
+import DisplayCard from "../DisplayCard/DisplayCard";
 import Form from "react-bootstrap/Form";
-import { API_KEY, BASE_URL } from "../config/config";
+import { API_KEY, BASE_URL } from "../../config/config";
 import { debounce } from "lodash";
 import Spinner from "react-bootstrap/Spinner";
 import styles from "./ImageSearch.module.css";
-import { ImageSearchContext } from "./Context/ImageContext";
+import { ImageSearchContext } from "../Context/ImageContext";
 const ImageSearch = () => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
@@ -47,6 +47,7 @@ const ImageSearch = () => {
         BASE_URL +
         "?key=" +
         API_KEY +
+        "&image_type=photo" +
         "&q=" +
         encodeURIComponent(searchField) +
         "&per_page=200";
