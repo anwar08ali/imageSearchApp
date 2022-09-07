@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
 }
 .searchTitle {
   margin-right: 5px;
@@ -12,9 +13,6 @@
 }
 .searchWrapper {
   padding-top: 10px;
-}
-.cardWrapper {
-  margin-top: 10px;
 }
 .loaderWrapper {
   text-align: center;

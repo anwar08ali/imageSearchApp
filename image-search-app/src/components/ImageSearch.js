@@ -49,7 +49,7 @@ const ImageSearch = () => {
         API_KEY +
         "&q=" +
         encodeURIComponent(searchField) +
-        "per_page=200";
+        "&per_page=200";
       setIsLoading(true);
       const data = await fetch(URL)
         .then((resp) => resp.json())

@@ -1,4 +1,5 @@
 import React from "react";
+import ErrorBoundary from "../../components/ErrorBoundary/ErrorBoundary";
 
 import ImageSearch from "../../components/ImageSearch";
 import styles from "./home.module.css";
@@ -9,7 +10,9 @@ const Home = (props) => {
       <header>
         <div className={styles.heading}>Image Search App</div>
       </header>
-      <ImageSearch />
+      <ErrorBoundary>
+        <ImageSearch />
+      </ErrorBoundary>
     </>
   );
 };
