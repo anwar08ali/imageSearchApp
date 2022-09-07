@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-function DisplayCard({ searchedImages }) {
+import { ImageSearchContext } from "./Context/ImageContext";
+function DisplayCard() {
+  const { searchedImages } = useContext(ImageSearchContext);
+
   return (
     <Container fluid>
       <Row>
@@ -13,6 +16,9 @@ function DisplayCard({ searchedImages }) {
               </Card>
             </Col>
           ))}
+        {searchedImages && searchedImages.hits?.length == 0 && (
+          <h2 style={{ textAlign: "center" }}>No results found.</h2>
+        )}
       </Row>
     </Container>
   );

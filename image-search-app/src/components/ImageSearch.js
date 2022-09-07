@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Scroll from "./Scroll";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import DisplayCard from "./DisplayCard";
@@ -7,12 +7,12 @@ import { API_KEY, BASE_URL } from "../config/config";
 import { debounce } from "lodash";
 import Spinner from "react-bootstrap/Spinner";
 import styles from "./ImageSearch.module.css";
+import { ImageSearchContext } from "./Context/ImageContext";
 const ImageSearch = () => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
-  const [searchedImages, setSearchedImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-
+  const { setSearchedImages } = useContext(ImageSearchContext);
   const handleChange = debounce((text) => {
     setSearchField(text);
     if (text === "") {
@@ -33,7 +33,7 @@ const ImageSearch = () => {
         return (
           <Scroll>
             <div className={styles.cardWrapper}>
-              <DisplayCard searchedImages={searchedImages} />
+              <DisplayCard />
             </div>
           </Scroll>
         );
