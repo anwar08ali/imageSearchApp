@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Tech Stack
+
+**Frontend:**
+
+![reactjs](https://img.shields.io/badge/React%20Js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
+![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;
+![react-bootstrap](https://img.shields.io/badge/-React%20Bootstrap-61dafb?style=for-the-badge)&nbsp;
+
+
 ## Available Scripts
 
 In the project directory, you can run:
