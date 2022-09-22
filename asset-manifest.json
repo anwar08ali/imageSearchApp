@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/imageSearchApp/static/css/main.24b6528e.css",
+    "main.js": "/imageSearchApp/static/js/main.a626fa36.js",
+    "static/js/787.381d97be.chunk.js": "/imageSearchApp/static/js/787.381d97be.chunk.js",
+    "index.html": "/imageSearchApp/index.html",
+    "main.24b6528e.css.map": "/imageSearchApp/static/css/main.24b6528e.css.map",
+    "main.a626fa36.js.map": "/imageSearchApp/static/js/main.a626fa36.js.map",
+    "787.381d97be.chunk.js.map": "/imageSearchApp/static/js/787.381d97be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24b6528e.css",
+    "static/js/main.a626fa36.js"
+  ]
+}
